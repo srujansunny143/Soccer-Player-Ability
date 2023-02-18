@@ -1,0 +1,49 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> SOCCER PLAYER ABILITY </h1><br>
+
+<!-- Main Input For Receiving Query to our ML -->
+<form action="{{ url_for('predict')}}"method="post">
+    <input type="text" name="Apps" placeholder="Apps" required="required" /><br>
+      <input type="text" name="Mins/Gm" placeholder="Mins/Gm" required="required" /><br>
+      <input type="text" name="Height" placeholder="Height" required="required" /><br>
+      <input type="text" name="Weight" placeholder="Weight" required="required" /><br>
+      <input type="text" name="Age" placeholder="Age" required="required" /><br>
+      <input type="text" name="Av Rat" placeholder="Av Rat" required="required" /><br>
+      <input type="text" name="Gls" placeholder="Gls" required="required" /><br>
+      <input type="text" name="Shot %" placeholder="Shot %" required="required" /><br>
+      <input type="text" name="Ch C/90" placeholder="Ch C/90" required="required" /><br>
+      <input type="text" name="Asts/90" placeholder="Asts/90" required="required" /><br>
+      <input type="text" name="K Ps/90" placeholder="K Ps/90" required="required" /><br>
+      <input type="text" name="Pas %" placeholder="Pas %" required="required" /><br>
+      <input type="text" name="Cr C/A" placeholder="Cr C/A" required="required" /><br>
+      <input type="text" name="Drb/90" placeholder="Drb/90" required="required" /><br>
+      <input type="text" name=" Distance" placeholder="Distance" required="required" /><br>
+      <input type="text" name="Hdr %" placeholder="Hdr %" required="required" /><br>
+      <input type="text" name="K Tck" placeholder="K Tck" required="required" /><br>
+      <input type="text" name="Fls" placeholder="Fls" required="required" /><br>
+      <input type="text" name="Int/90" placeholder="Int/90" required="required" /><br>
+      <input type="text" name="PoM" placeholder="PoM" required="required" /><br>
+      <input type="text" name="Off" placeholder="Off" required="required" /><br>
+      <input type="text" name="Tck R" placeholder="Tck R" required="required" /><br>
+      <input type="text" name="Dist/Mins" placeholder="Dist/Mins" required="required" /><br>
+      <input type="text" name="Value" placeholder="Value" required="required" /><br>
+
+        
+     
+
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+  </form>
+
+ <br>
+ <br>
+
+ 
+</div>
+{{prediction_text}}
+
+</body>
+</html>
